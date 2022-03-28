@@ -35,8 +35,7 @@ const Dashboard: React.FC = () => {
   async function fetchImages() {
     try {
       const result = await axiosInstance.get('?method=flickr.photos.search&api_key=' 
-      + process.env.REACT_APP_FLICKR_API_KEY + '&user_id=' 
-      + process.env.REACT_APP_FLICKR_USER_ID + '&per_page=' 
+      + process.env.REACT_APP_FLICKR_API_KEY + '&per_page=' 
       + pageSize + '&page=' 
       + page + '&text=' 
       + searchText + '&sort=' 
