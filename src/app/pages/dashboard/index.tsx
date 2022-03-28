@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Gallery, Toolbar } from 'app/components'
+import { Gallery, Toolbar, Pagination } from 'app/components'
 import axiosInstance from 'app/services/axiosService'
 import usePhotos from 'app/hooks/usePhotos'
-import Pagination from 'app/components/pagination'
 import useWindowSize from 'app/hooks/useWindowSize'
 
 export interface IPhoto {
@@ -36,8 +35,7 @@ const Dashboard: React.FC = () => {
   async function fetchImages() {
     try {
       const result = await axiosInstance.get('?method=flickr.photos.search&api_key=' 
-      + 'a3aaff05f8fbe045216b9a991affd3ad' + '&user_id=' 
-      + '127665714@N08' + '&per_page=' 
+      + process.env.REACT_APP_FLICKR_API_KEY + '&per_page=' 
       + pageSize + '&page=' 
       + page + '&text=' 
       + searchText + '&sort=' 
