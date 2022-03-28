@@ -91,5 +91,5 @@
     ],
     "**/*.{ts,tsx}": "npm run typecheck"
   },
-  "proxy": "http://localhost:5000"
+  "proxy": "http://localhost:3000"
 }
