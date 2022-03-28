@@ -1,0 +1,42 @@
+.header {
+  margin-top: 24px;
+
+  .header__container {
+    padding: 0 4rem;
+
+    .header__content {
+      display: flex;
+      justify-content: space-between;
+
+      .header__wrapper a {
+        display: flex;
+
+        .header__logo {
+          width: 48px;
+        }
+
+        h5 {
+          text-decoration: none;
+          margin-left: 12px;
+          float: left;
+          flex: 0 0 auto;
+          font-size: 24px;
+          font-weight: 500;
+          color: #0a1533;
+        }
+      }
+
+      .header__title {
+        h5 {
+          text-decoration: none;
+          margin-left: 12px;
+          float: left;
+          flex: 0 0 auto;
+          font-size: 24px;
+          font-weight: 500;
+          color: #0a1533;
+        }
+      }
+    }
+  }
+}

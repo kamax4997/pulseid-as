@@ -1,0 +1,44 @@
+.toolbar {
+  margin: 2rem 0;
+
+  .toolbar__container {
+    .toolbar__content {
+      display: flex;
+      justify-content: space-between;
+
+      .toolbar__search {
+        .toolbar__search-input {
+          width: 300px;
+          height: 40px;
+          margin: auto;
+          font-size: inherit;
+          padding: 0 24px;
+          border-radius: 30px;
+          border: none;
+          border: 1.3px solid #f2f2f2;
+          outline: 0;
+          -webkit-box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 15%);
+          box-shadow: 2px 4px 8px 0 rgb(0 0 0 / 15%);
+          -webkit-transition: all .3s ease;
+          -o-transition: all .3s ease;
+          transition: all .3s ease;
+        }
+      }
+
+      .toolbar__sort {
+        width: 160px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar__search-input {
+    width: 160px !important;
+    padding: 0 16px !important;
+  }
+
+  .toolbar__sort {
+    width: 40% !important;
+  }
+}

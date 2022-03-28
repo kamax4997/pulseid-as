@@ -1,0 +1,43 @@
+.tabs {
+  align-self: center;
+
+  .tabs__container {
+    display: flex;
+
+    .tab {
+      margin: 8px;
+      color: #fd5d1b;
+      cursor: pointer;
+
+      &.active {
+        color: #c4cee1;
+      }
+
+      .tab__container {
+        font-size: 12px;
+        font-weight: bolder;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+}
+
+.tabContent {
+  text-align: -webkit-center;
+
+  .tabContent__container {
+    width: fit-content;
+
+    &.active {
+      display: flex;
+    }
+
+    .tabContent_item {
+      margin: 2rem;
+    }
+
+    .tabContent__text {
+      font-size: 16px;
+    }
+  }
+}

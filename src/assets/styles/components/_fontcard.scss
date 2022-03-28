@@ -1,0 +1,97 @@
+.fontcard {
+  cursor: pointer;
+
+  &.fontcard-selected {
+    opacity: 50%;
+  }
+
+  .fontcard__container {
+    display: flex;
+    max-width: 40rem;
+
+    &.fontcard__container-first {
+      flex-direction: column;
+      width: 18rem;
+    }
+
+    .fontcard__colorbox {
+      border: 0.2rem solid #4a4b4b;
+      border-radius: 12px;
+      padding: 0.3rem;
+      width: 12rem;
+      height: 12rem;
+      min-width: 12rem;
+      position: relative;
+
+      &.fontcard__colorbox-first {
+        width: 16rem;
+        height: 16rem;
+        min-width: 16rem;
+      }
+
+      .colorbox__main {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        position: relative;
+
+        .colorbox__abbr {
+          position: absolute;
+          bottom: 1rem;
+          left: 1rem;
+          font-weight: 900;
+          color: rgba(255, 255, 255, 0.3);
+          font-size: 2.4rem;
+
+          &.colorbox__abbr-first {
+            font-size: 4.8rem;
+          }
+        }
+      }
+
+      .colorbox__tooltip {
+        display: none;
+        position: absolute;
+        top: 84%;
+        right: 12%;
+        padding: 4px;
+        border: 1px solid rgb(108, 164, 248);
+        border-radius: 0.5rem;
+        background-color: rgb(59, 147, 230);
+        opacity: 1;
+        color: white;
+      }
+
+      &:hover .colorbox__tooltip {
+        display: block;
+      }
+    }
+
+    .fontcard__description {
+      height: fit-content;
+      margin-top: auto;
+      margin-bottom: auto;
+      font-weight: bold;
+      margin-left: 4rem;
+      position: relative;
+      line-height: 2.4rem;
+
+      &::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: #96a1b2;
+        left: -24px;
+        top: 2px;
+      }
+
+      &.fontcard__description-first {
+        margin-top: 2rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+}
