@@ -90,6 +90,5 @@
       "npm run prettier:fix"
     ],
     "**/*.{ts,tsx}": "npm run typecheck"
-  },
-  "proxy": "http://localhost:3000"
+  }
 }
