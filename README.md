@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-[PulseiD Assessment](https://pulseid-assessment.herokuapp.com/)
+[PulseiD Assessment](https://pulseid-frontend-assessment.herokuapp.com/)
 
 ## Description
 
